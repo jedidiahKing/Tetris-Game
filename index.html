@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tetris</title>
+</head>
+
+<body>
+
+
+<div class="input-stuff">
+    <h3>Press Start to Begin the game</h3>
+    <h3>Score:<span id="score">0</span></h3>
+    <h3>level:<select name="level" id="levels">
+            <option value="1">1</option>
+            <option value="5">5</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="100">100</option>
+        </select>
+    </h3>
+    <button id="start-button">Start/Pause</button>
+</div>
+
+    <div class="container">
+        <div class="grid">
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+            <div class="normal"></div>
+
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+
+        </div>
+
+
+        <div class="mini-grid">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <script src="script.js"></script>
+    </div>
+
+</body>
+
+</html>
